@@ -5,6 +5,7 @@ import com.dgsw.javaassignmentproject.dto.user.UserRequest;
 import com.dgsw.javaassignmentproject.dto.user.UserResponse;
 import com.dgsw.javaassignmentproject.dto.user.UserUpdateRequest;
 import com.dgsw.javaassignmentproject.service.UserService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,7 +19,7 @@ public class UserController {
     private final UserService userService;
 
     @PostMapping
-    public ApiResponse<UserResponse> create(@RequestBody UserRequest request) {
+    public ApiResponse<UserResponse> create(@Valid @RequestBody UserRequest request) {
         return ApiResponse.created(userService.createUser(request));
     }
 
