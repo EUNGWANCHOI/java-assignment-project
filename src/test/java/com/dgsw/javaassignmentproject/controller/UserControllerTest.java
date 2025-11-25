@@ -1,6 +1,6 @@
 package com.dgsw.javaassignmentproject.controller;
 
-import com.dgsw.javaassignmentproject.dto.user.UserRequest;
+import com.dgsw.javaassignmentproject.domain.dto.user.UserRequest;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

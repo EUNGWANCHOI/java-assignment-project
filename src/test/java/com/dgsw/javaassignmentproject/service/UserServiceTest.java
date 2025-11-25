@@ -1,11 +1,11 @@
 package com.dgsw.javaassignmentproject.service;
 
-import com.dgsw.javaassignmentproject.common.exception.CustomException;
-import com.dgsw.javaassignmentproject.common.exception.ErrorCode;
-import com.dgsw.javaassignmentproject.dto.user.UserRequest;
-import com.dgsw.javaassignmentproject.dto.user.UserResponse;
-import com.dgsw.javaassignmentproject.entity.User;
-import com.dgsw.javaassignmentproject.repository.UserRepository;
+import com.dgsw.javaassignmentproject.domain.service.user.UserServiceImpl;
+import com.dgsw.javaassignmentproject.global.exception.CustomException;
+import com.dgsw.javaassignmentproject.global.exception.ErrorCode;
+import com.dgsw.javaassignmentproject.domain.dto.user.UserResponse;
+import com.dgsw.javaassignmentproject.domain.entity.user.User;
+import com.dgsw.javaassignmentproject.domain.repository.user.UserRepository;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
