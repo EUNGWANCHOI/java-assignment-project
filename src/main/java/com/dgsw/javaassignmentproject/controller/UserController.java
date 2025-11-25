@@ -7,6 +7,7 @@ import com.dgsw.javaassignmentproject.dto.user.UserUpdateRequest;
 import com.dgsw.javaassignmentproject.service.UserService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -19,6 +20,7 @@ public class UserController {
     private final UserService userService;
 
     @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
     public ApiResponse<UserResponse> create(@Valid @RequestBody UserRequest request) {
         return ApiResponse.created(userService.createUser(request));
     }
