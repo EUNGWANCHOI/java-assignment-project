@@ -1,4 +1,4 @@
-package com.dgsw.javaassignmentproject.domain.entity.user;
+package com.dgsw.javaassignmentproject.domain.user.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

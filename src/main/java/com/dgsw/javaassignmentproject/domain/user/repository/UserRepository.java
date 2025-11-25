@@ -1,6 +1,6 @@
-package com.dgsw.javaassignmentproject.domain.repository.user;
+package com.dgsw.javaassignmentproject.domain.user.repository;
 
-import com.dgsw.javaassignmentproject.domain.entity.user.User;
+import com.dgsw.javaassignmentproject.domain.user.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 

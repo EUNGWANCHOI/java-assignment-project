@@ -1,4 +1,4 @@
-package com.dgsw.javaassignmentproject.domain.dto.user;
+package com.dgsw.javaassignmentproject.domain.user.dto;
 
 public record UserResponse(
         Long id,

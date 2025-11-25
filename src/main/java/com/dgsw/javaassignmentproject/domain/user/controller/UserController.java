@@ -1,10 +1,10 @@
-package com.dgsw.javaassignmentproject.domain.controller.user;
+package com.dgsw.javaassignmentproject.domain.user.controller;
 
 import com.dgsw.javaassignmentproject.global.api.ApiResponse;
-import com.dgsw.javaassignmentproject.domain.dto.user.UserRequest;
-import com.dgsw.javaassignmentproject.domain.dto.user.UserResponse;
-import com.dgsw.javaassignmentproject.domain.dto.user.UserUpdateRequest;
-import com.dgsw.javaassignmentproject.domain.service.user.UserService;
+import com.dgsw.javaassignmentproject.domain.user.dto.UserRequest;
+import com.dgsw.javaassignmentproject.domain.user.dto.UserResponse;
+import com.dgsw.javaassignmentproject.domain.user.dto.UserUpdateRequest;
+import com.dgsw.javaassignmentproject.domain.user.service.UserService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

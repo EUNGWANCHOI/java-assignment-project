@@ -1,8 +1,8 @@
-package com.dgsw.javaassignmentproject.domain.service.post;
+package com.dgsw.javaassignmentproject.domain.post.service;
 
-import com.dgsw.javaassignmentproject.domain.dto.post.PostRequest;
-import com.dgsw.javaassignmentproject.domain.dto.post.PostResponse;
-import com.dgsw.javaassignmentproject.domain.dto.post.PostUpdateRequest;
+import com.dgsw.javaassignmentproject.domain.post.dto.PostRequest;
+import com.dgsw.javaassignmentproject.domain.post.dto.PostResponse;
+import com.dgsw.javaassignmentproject.domain.post.dto.PostUpdateRequest;
 
 import java.util.List;
 

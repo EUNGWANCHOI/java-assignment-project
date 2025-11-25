@@ -1,4 +1,4 @@
-package com.dgsw.javaassignmentproject.domain.dto.user;
+package com.dgsw.javaassignmentproject.domain.user.dto;
 
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;

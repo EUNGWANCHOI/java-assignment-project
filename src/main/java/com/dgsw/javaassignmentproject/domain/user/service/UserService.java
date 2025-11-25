@@ -1,8 +1,8 @@
-package com.dgsw.javaassignmentproject.domain.service.user;
+package com.dgsw.javaassignmentproject.domain.user.service;
 
-import com.dgsw.javaassignmentproject.domain.dto.user.UserRequest;
-import com.dgsw.javaassignmentproject.domain.dto.user.UserResponse;
-import com.dgsw.javaassignmentproject.domain.dto.user.UserUpdateRequest;
+import com.dgsw.javaassignmentproject.domain.user.dto.UserRequest;
+import com.dgsw.javaassignmentproject.domain.user.dto.UserResponse;
+import com.dgsw.javaassignmentproject.domain.user.dto.UserUpdateRequest;
 
 import java.util.List;
 

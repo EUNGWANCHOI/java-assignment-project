@@ -1,12 +1,12 @@
-package com.dgsw.javaassignmentproject.domain.service.user;
+package com.dgsw.javaassignmentproject.domain.user.service;
 
 import com.dgsw.javaassignmentproject.global.exception.CustomException;
 import com.dgsw.javaassignmentproject.global.exception.ErrorCode;
-import com.dgsw.javaassignmentproject.domain.dto.user.UserRequest;
-import com.dgsw.javaassignmentproject.domain.dto.user.UserResponse;
-import com.dgsw.javaassignmentproject.domain.dto.user.UserUpdateRequest;
-import com.dgsw.javaassignmentproject.domain.entity.user.User;
-import com.dgsw.javaassignmentproject.domain.repository.user.UserRepository;
+import com.dgsw.javaassignmentproject.domain.user.dto.UserRequest;
+import com.dgsw.javaassignmentproject.domain.user.dto.UserResponse;
+import com.dgsw.javaassignmentproject.domain.user.dto.UserUpdateRequest;
+import com.dgsw.javaassignmentproject.domain.user.entity.User;
+import com.dgsw.javaassignmentproject.domain.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

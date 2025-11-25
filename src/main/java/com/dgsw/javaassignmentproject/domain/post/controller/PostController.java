@@ -1,10 +1,10 @@
-package com.dgsw.javaassignmentproject.domain.controller.post;
+package com.dgsw.javaassignmentproject.domain.post.controller;
 
+import com.dgsw.javaassignmentproject.domain.post.service.PostService;
 import com.dgsw.javaassignmentproject.global.api.ApiResponse;
-import com.dgsw.javaassignmentproject.domain.dto.post.PostRequest;
-import com.dgsw.javaassignmentproject.domain.dto.post.PostResponse;
-import com.dgsw.javaassignmentproject.domain.dto.post.PostUpdateRequest;
-import com.dgsw.javaassignmentproject.domain.service.post.PostService;
+import com.dgsw.javaassignmentproject.domain.post.dto.PostRequest;
+import com.dgsw.javaassignmentproject.domain.post.dto.PostResponse;
+import com.dgsw.javaassignmentproject.domain.post.dto.PostUpdateRequest;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

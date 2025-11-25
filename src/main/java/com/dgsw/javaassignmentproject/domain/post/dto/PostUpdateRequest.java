@@ -1,4 +1,4 @@
-package com.dgsw.javaassignmentproject.domain.dto.post;
+package com.dgsw.javaassignmentproject.domain.post.dto;
 
 public record PostUpdateRequest(
         String title,
