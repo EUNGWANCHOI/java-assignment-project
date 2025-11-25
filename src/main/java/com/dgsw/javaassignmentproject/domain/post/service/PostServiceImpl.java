@@ -2,9 +2,11 @@ package com.dgsw.javaassignmentproject.domain.post.service;
 
 import com.dgsw.javaassignmentproject.domain.post.dto.PostRequest;
 import com.dgsw.javaassignmentproject.domain.post.dto.PostResponse;
+import com.dgsw.javaassignmentproject.domain.post.dto.PostUpdateRequest;
 import com.dgsw.javaassignmentproject.domain.post.entity.Post;
 import com.dgsw.javaassignmentproject.domain.post.repository.PostRepository;
 import com.dgsw.javaassignmentproject.global.exception.CustomException;
+import com.dgsw.javaassignmentproject.global.exception.ErrorCode;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
