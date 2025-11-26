@@ -1,13 +1,14 @@
 package com.dgsw.javaassignmentproject.domain.post.controller;
 
-import com.dgsw.javaassignmentproject.domain.post.service.PostService;
-import com.dgsw.javaassignmentproject.global.api.ApiResponse;
 import com.dgsw.javaassignmentproject.domain.post.dto.PostRequest;
 import com.dgsw.javaassignmentproject.domain.post.dto.PostResponse;
 import com.dgsw.javaassignmentproject.domain.post.dto.PostUpdateRequest;
+import com.dgsw.javaassignmentproject.domain.post.service.PostService;
+import com.dgsw.javaassignmentproject.global.api.ApiResponse;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -26,8 +27,14 @@ public class PostController {
     }
 
     @GetMapping("/{id}")
-    public ApiResponse<PostResponse> get(@PathVariable Long id) {
-        return ApiResponse.ok(postService.getPost(id));
+    public ResponseEntity<ApiResponse<PostResponse>> get(@PathVariable Long id) {
+        try {
+            return ResponseEntity.ok(ApiResponse.ok(postService.getPost(id)));
+        } catch (Exception e) {
+            return ResponseEntity
+                    .status(HttpStatus.BAD_REQUEST)
+                    .body(ApiResponse.fail("게시글을 찾을 수 없습니다!"));
+        }
     }
 
     @GetMapping("/search")
@@ -49,8 +56,14 @@ public class PostController {
     }
 
     @DeleteMapping("/{id}")
-    public ApiResponse<Void> delete(@PathVariable Long id) {
-        postService.deletePost(id);
-        return ApiResponse.ok();
+    public ResponseEntity<ApiResponse<Void>> delete(@PathVariable Long id) {
+        try {
+            postService.deletePost(id);
+            return ResponseEntity.ok(ApiResponse.ok());
+        } catch (Exception e) {
+            return ResponseEntity
+                    .status(HttpStatus.BAD_REQUEST)
+                    .body(ApiResponse.error(HttpStatus.BAD_REQUEST, "삭제할 게시글을 찾을 수 없습니다!"));
+        }
     }
 }

@@ -32,4 +32,8 @@ public record ApiResponse<T>(
     public static ApiResponse<Void> error(HttpStatus status, String message) {
         return new ApiResponse<>(false, null, new ErrorResponse(status.value(), message));
     }
+
+    public static <T> ApiResponse<T> fail(String message) {
+        return new ApiResponse<>(false, null, new ErrorResponse(400, message));
+    }
 }
